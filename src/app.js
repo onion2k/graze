@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import './app.css';
 
 import Navigation from './components/Navigation'
 import Banner from './components/Banner'
+import Flash from './components/Flash'
 
 class App extends Component {
     constructor(props) {
@@ -12,7 +14,7 @@ class App extends Component {
         return (
             <div>
                 <Navigation><p>Navigation</p></Navigation>
-                <Banner><p>Banner</p></Banner>
+                <Banner><Flash title={"Flash title goes here"} /></Banner>
             </div>
         );
     }

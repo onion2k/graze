@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
-
 .flash {
 }
 
@@ -12,7 +10,7 @@
     height: 450px;
     width: 50%;
     background-color: rgba(1,221,221,0.9);
-    transform: skew(-15deg, 0) translateX(500px);
+    transform: skew(-15deg, 0) translateX(80%);
     animation-name: slidein;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     animation-duration: 1s;
@@ -22,11 +20,11 @@
 
 @keyframes slidein {
     from {
-        transform: skew(-15deg, 0) translateX(500px);
+        transform: skew(-15deg, 0) translateX(80%);
     }
     to {
         transform: skew(-15deg, 0) translateX(0px);
-    } 
+    }
 }
 
 .content {
@@ -36,7 +34,7 @@
     word-spacing: 10000px;
     font-family: 'Fredoka One', cursive;
     font-size: 4.5rem;
-    transform: translateX(500px);
+    transform: translateX(80%);
     animation-name: slideincontent;
     animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
     animation-duration: 1s;
@@ -46,7 +44,7 @@
 
 @keyframes slideincontent {
     from {
-        transform: translateX(500px);
+        transform: translateX(80%);
     }
     to {
         transform: translateX(0px);

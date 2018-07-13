@@ -1,7 +1,7 @@
 import React from 'react';
-import './boxes.css';
+import './box.css';
 
-class Boxes extends React.Component {
+class Box extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -12,4 +12,4 @@ class Boxes extends React.Component {
   }
 }
 
-export default Boxes;
+export default Box;

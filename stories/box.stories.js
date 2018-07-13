@@ -1,14 +1,14 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import Boxes from '../src/components/Boxes';
+import Box from '../src/components/Box';
 
-storiesOf('Boxes', module)
+storiesOf('Box', module)
   .add('with text', () => (
-    <Boxes onClick={action('clicked')}>Hello Button</Boxes>
+    <Box onClick={action('clicked')}>Hello Button</Box>
   ))
   .add('with some emoji', () => (
-    <Boxes>
+    <Box>
         <div>Box</div>
-    </Boxes>
+    </Box>
   ));
