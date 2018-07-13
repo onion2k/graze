@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+.flash {
+}
+
+.flash::before {
+    position: absolute;
+    content: '';
+    margin: 0;
+    padding: 0;
+    margin-left: 60%;
+    height: 450px;
+    width: 50%;
+    background-color: rgba(1,221,221,0.9);
+    transform: skew(-15deg, 0) translateX(500px);
+    animation-name: slidein;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidein {
+    from {
+        transform: skew(-15deg, 0) translateX(500px);
+    }
+    to {
+        transform: skew(-15deg, 0) translateX(0px);
+    } 
+}
+
+.content {
+    position: relative;
+    padding: 50px;
+    text-align: right;
+    word-spacing: 10000px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 4.5rem;
+    transform: translateX(500px);
+    animation-name: slideincontent;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-duration: 1s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideincontent {
+    from {
+        transform: translateX(500px);
+    }
+    to {
+        transform: translateX(0px);
+    } 
+}
