@@ -9,4 +9,4 @@ storiesOf('Header', module)
   ))
   .add('with some emoji', () => (
     <Header onClick={action('clicked')}><span role="img" aria-label="so cool">😀 😎 👍 💯</span></Header>
-  ));   
+  ));
