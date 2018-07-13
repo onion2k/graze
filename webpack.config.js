@@ -19,6 +19,19 @@
           use: {
             loader: "babel-loader"
           }
+        },
+        {
+          test: /\.css$/,
+          use: [ 'style-loader', 'css-loader?url=false' ]
+        },
+        {
+          test: /\.(pdf|jpg|png|gif|svg|ico)$/,
+          use: [{
+            loader: 'file-loader',
+            options: {
+                name: '[path][name]-[hash:8].[ext]'
+            },
+          }]
         }
       ]
     },

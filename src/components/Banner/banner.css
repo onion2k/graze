@@ -1,0 +1,9 @@
+.banner {
+    min-height: 400px;
+    padding: 15px;
+    background-color: #1B701B;
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

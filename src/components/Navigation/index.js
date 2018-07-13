@@ -1,4 +1,5 @@
 import React from 'react';
+import './navigation.css';
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -6,7 +7,7 @@ class Navigation extends React.Component {
   }
   render() {
     return (
-      <div>{this.props.children}</div>
+      <div className={"navigation"}>{this.props.children}</div>
     );
   }
 }
